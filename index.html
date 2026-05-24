@@ -7,138 +7,146 @@
   <meta name="description" content="転職させることが目的ではありません。「これからどう働くか」を、対話から始めます。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="header-inner">
-        <a href="#" class="logo">つなぐナース</a>
-        <nav class="nav">
-          <a href="#about">サービス概要</a>
-          <a href="#flow">ご利用の流れ</a>
-          <a href="#message">代表メッセージ</a>
-        </nav>
-      </div>
+    <div class="container header__inner">
+      <a href="#top" class="header__logo">tsunagu nurse</a>
+      <nav class="header__nav">
+        <a href="#about">about</a>
+        <a href="#why">why</a>
+        <a href="#message">message</a>
+        <a href="#process">process</a>
+      </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <p class="hero-badge">ご紹介いただいた看護師さんへ</p>
-      <h1 class="hero-title">ここまでのキャリアを、<br>次にどう活かすか。<br>一緒に考えます。</h1>
-      <p class="hero-sub">転職させることが目的ではありません。<br>「これからどう働くか」を、対話から始めます。</p>
-      <p class="hero-cta-note">ご連絡は、紹介元の方を通じてお願いします</p>
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">ご紹介いただいた看護師さんへ</p>
+      <h1 class="hero__title">ここまでのキャリアを、<br>次にどう活かすか。<br>一緒に考えます。</h1>
+      <p class="hero__sub">転職させることが目的ではありません。<br>「これからどう働くか」を、対話から始めます。</p>
     </div>
+    <a href="#about" class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">scroll</span>
+    </a>
   </section>
 
-  <!-- Intro -->
-  <section class="intro">
+  <!-- About -->
+  <section class="section" id="about">
     <div class="container">
-      <div class="intro-inner">
-        <p>あなたは今、信頼できる方から<br>「話してみては」と声をかけていただいてここにいるはずです。</p>
+      <p class="section__label">about</p>
+      <h2 class="section__title fade-in">つなぐナースとは</h2>
+      <div class="prose fade-in">
+        <p>あなたは今、信頼できる方から「話してみては」と声をかけていただいてここにいるはずです。</p>
         <p>このページは、そういった方のためだけに用意しています。</p>
-        <p>今すぐ転職を考えていなくても、構いません。<br>「なんとなくもやもやしている」「このまま続けていいのか」<br>という段階から、一緒に考えます。</p>
+        <p>今すぐ転職を考えていなくても、構いません。「なんとなくもやもやしている」「このまま続けていいのか」という段階から、一緒に考えます。転職は手段であって、目的ではありません。</p>
       </div>
     </div>
   </section>
 
   <!-- Why -->
-  <section class="why" id="about">
+  <section class="section section--alt" id="why">
     <div class="container">
-      <h2 class="section-title">「つなぐ」に込めた意味</h2>
-      <div class="why-grid">
-        <div class="why-item">
-          <span class="why-number">01</span>
-          <h3>今の自分と、<br>なりたい自分をつなぐ</h3>
-          <p>転職は手段です。「どう働きたいか」「何のために働くか」という問いから始めます。</p>
-        </div>
-        <div class="why-item">
-          <span class="why-number">02</span>
-          <h3>あなたと、<br>信頼できる職場をつなぐ</h3>
-          <p>紹介する職場は厳選しています。「どこでもいい」は言いません。</p>
-        </div>
-        <div class="why-item">
-          <span class="why-number">03</span>
-          <h3>転職の前後を、<br>ずっとつなぐ</h3>
-          <p>入職後も相談できる関係を続けます。一度きりの紹介で終わりません。</p>
-        </div>
-      </div>
+      <p class="section__label">why</p>
+      <h2 class="section__title fade-in">「つなぐ」に込めた意味</h2>
+      <ul class="why-list">
+        <li class="why-item fade-in">
+          <span class="why-item__num">01</span>
+          <div class="why-item__body">
+            <h3 class="why-item__title">今の自分と、なりたい自分をつなぐ</h3>
+            <p class="why-item__text">転職は手段です。「どう働きたいか」「何のために働くか」という問いから始めます。</p>
+          </div>
+        </li>
+        <li class="why-item fade-in">
+          <span class="why-item__num">02</span>
+          <div class="why-item__body">
+            <h3 class="why-item__title">あなたと、信頼できる職場をつなぐ</h3>
+            <p class="why-item__text">紹介する職場は厳選しています。「どこでもいい」は言いません。</p>
+          </div>
+        </li>
+        <li class="why-item fade-in">
+          <span class="why-item__num">03</span>
+          <div class="why-item__body">
+            <h3 class="why-item__title">転職の前後を、ずっとつなぐ</h3>
+            <p class="why-item__text">入職後も相談できる関係を続けます。一度きりの紹介で終わりません。</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- Values -->
-  <section class="values">
+  <section class="section" id="values">
     <div class="container">
-      <h2 class="section-title">つなぐナースが大切にしていること</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <div class="value-icon">🤝</div>
-          <h3>履歴書より、人生を聞く</h3>
-          <p>スキルや資格より、「どう生きてきたか」「何を大切にしているか」を最初に聞きます。</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">🏠</div>
-          <h3>訪問看護の現場を知っている</h3>
-          <p>代表は現役の在宅医です。現場の実態を踏まえた上で、職場のご紹介をします。</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">✓</div>
-          <h3>紹介する職場を選んでいる</h3>
-          <p>「早く・たくさん」紹介することを目指していません。合わないと思ったら、正直に言います。</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">🌱</div>
-          <h3>長くそばにいる</h3>
-          <p>転職後も、キャリアの節目に声をかけられる関係を続けます。</p>
-        </div>
-      </div>
+      <p class="section__label">values</p>
+      <h2 class="section__title fade-in">大切にしていること</h2>
+      <ul class="values-list">
+        <li class="values-item fade-in">
+          <h3 class="values-item__title">履歴書より、人生を聞く</h3>
+          <p class="values-item__text">スキルや資格より、「どう生きてきたか」「何を大切にしているか」を最初に聞きます。</p>
+        </li>
+        <li class="values-item fade-in">
+          <h3 class="values-item__title">訪問看護の現場を知っている</h3>
+          <p class="values-item__text">代表は現役の在宅医です。現場の実態を踏まえた上で、職場のご紹介をします。</p>
+        </li>
+        <li class="values-item fade-in">
+          <h3 class="values-item__title">紹介する職場を選んでいる</h3>
+          <p class="values-item__text">「早く・たくさん」紹介することを目指していません。合わないと思ったら、正直に言います。</p>
+        </li>
+        <li class="values-item fade-in">
+          <h3 class="values-item__title">長くそばにいる</h3>
+          <p class="values-item__text">転職後も、キャリアの節目に声をかけられる関係を続けます。</p>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- Areas -->
-  <section class="areas">
+  <section class="section section--alt" id="areas">
     <div class="container">
-      <h2 class="section-title">対応領域</h2>
-      <div class="areas-grid">
-        <div class="area-main">
-          <span class="area-label">注力領域</span>
-          <h3>訪問看護・在宅医療</h3>
-          <p>代表が現役の在宅医として活動しており、現場の実態を深く理解しています。</p>
+      <p class="section__label">areas</p>
+      <h2 class="section__title fade-in">対応領域</h2>
+      <div class="areas-grid fade-in">
+        <div class="area-item area-item--main">
+          <p class="area-item__label">注力領域</p>
+          <h3 class="area-item__title">訪問看護・在宅医療</h3>
+          <p class="area-item__text">代表が現役の在宅医として活動しており、現場の実態を深く理解しています。</p>
         </div>
-        <div class="area-sub">
-          <div class="area-item">
-            <h4>美容クリニック</h4>
-            <p>夜勤なし・技術向上など、ライフスタイルを重視したい方へ</p>
-          </div>
-          <div class="area-item">
-            <h4>病院・クリニック</h4>
-            <p>急性期・慢性期など、ご経験に合わせてご提案します</p>
-          </div>
-          <div class="area-item">
-            <h4>相談のみ</h4>
-            <p>転職しない選択肢も含め、今の状況を整理したい方も歓迎です</p>
-          </div>
+        <div class="area-item">
+          <h3 class="area-item__title">美容クリニック</h3>
+          <p class="area-item__text">夜勤なし・技術向上など、ライフスタイルを重視したい方へ</p>
+        </div>
+        <div class="area-item">
+          <h3 class="area-item__title">病院・クリニック</h3>
+          <p class="area-item__text">急性期・慢性期など、ご経験に合わせてご提案します</p>
+        </div>
+        <div class="area-item">
+          <h3 class="area-item__title">相談のみ</h3>
+          <p class="area-item__text">転職しない選択肢も含め、今の状況を整理したい方も歓迎です</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Message -->
-  <section class="message" id="message">
+  <section class="section" id="message">
     <div class="container">
-      <h2 class="section-title">代表メッセージ</h2>
-      <div class="message-inner">
+      <p class="section__label">message</p>
+      <h2 class="section__title fade-in">代表メッセージ</h2>
+      <div class="message-inner fade-in">
         <div class="message-photo">
           <img src="daihyo.png" alt="代表・宗大貴" loading="lazy">
-          <p class="message-name">宗 大貴（そう ひろたか）</p>
-          <p class="message-title">株式会社医伝士 代表取締役<br>現役在宅医</p>
+          <p class="message-photo__name">宗 大貴</p>
+          <p class="message-photo__title">株式会社医伝士 代表取締役<br>現役在宅医</p>
         </div>
-        <div class="message-text">
+        <div class="message-body">
           <p>医師として在宅医療の現場に立ち続けながら、看護師のキャリア支援を始めたのには理由があります。</p>
           <p>訪問看護の現場で、「この人がいなければ患者さんの生活は成り立たない」と思う看護師に何人も出会ってきました。その一方で、職場環境や待遇の問題で辞めていく方も、たくさん見てきました。</p>
           <p>看護師が自分に合った場所で長く働けることは、患者さんにとっても良いことです。「転職させる」のではなく「その人の在り方を軸に、次の場所を一緒に考える」というスタンスで、このサービスを作りました。</p>
@@ -148,94 +156,91 @@
     </div>
   </section>
 
-  <!-- Flow -->
-  <section class="flow" id="flow">
+  <!-- Process -->
+  <section class="section section--alt" id="process">
     <div class="container">
-      <h2 class="section-title">ご利用の流れ</h2>
-      <div class="flow-steps">
-        <div class="flow-step">
-          <div class="step-num">1</div>
-          <h3>紹介元の方を通じてご連絡</h3>
-          <p>「話を聞いてみたい」と紹介してくださった方にお伝えください。代表・宗に繋いでいただきます。</p>
-        </div>
-        <div class="flow-arrow">▼</div>
-        <div class="flow-step">
-          <div class="step-num">2</div>
-          <h3>初回面談（無料）</h3>
-          <p>オンラインで30〜60分。今のお気持ちや状況をお聞きします。転職ありきではありません。</p>
-        </div>
-        <div class="flow-arrow">▼</div>
-        <div class="flow-step">
-          <div class="step-num">3</div>
-          <h3>方向性の整理</h3>
-          <p>転職するか・しないかも含め、「次のステップ」を一緒に考えます。</p>
-        </div>
-        <div class="flow-arrow">▼</div>
-        <div class="flow-step">
-          <div class="step-num">4</div>
-          <h3>職場のご紹介（希望時）</h3>
-          <p>ご希望の方に、厳選した職場をご提案します。</p>
-        </div>
-        <div class="flow-arrow">▼</div>
-        <div class="flow-step">
-          <div class="step-num">5</div>
-          <h3>入職後もサポート</h3>
-          <p>長期的にご連絡できる関係を続けます。</p>
-        </div>
-      </div>
+      <p class="section__label">process</p>
+      <h2 class="section__title fade-in">ご利用の流れ</h2>
+      <ol class="process-list">
+        <li class="process-item fade-in">
+          <span class="process-item__num">01</span>
+          <div class="process-item__body">
+            <h3 class="process-item__title">紹介元の方を通じてご連絡</h3>
+            <p class="process-item__text">「話を聞いてみたい」と紹介してくださった方にお伝えください。代表・宗に繋いでいただきます。</p>
+          </div>
+        </li>
+        <li class="process-item fade-in">
+          <span class="process-item__num">02</span>
+          <div class="process-item__body">
+            <h3 class="process-item__title">初回面談（無料）</h3>
+            <p class="process-item__text">オンラインで30〜60分。今のお気持ちや状況をお聞きします。転職ありきではありません。</p>
+          </div>
+        </li>
+        <li class="process-item fade-in">
+          <span class="process-item__num">03</span>
+          <div class="process-item__body">
+            <h3 class="process-item__title">方向性の整理</h3>
+            <p class="process-item__text">転職するか・しないかも含め、「次のステップ」を一緒に考えます。</p>
+          </div>
+        </li>
+        <li class="process-item fade-in">
+          <span class="process-item__num">04</span>
+          <div class="process-item__body">
+            <h3 class="process-item__title">職場のご紹介（希望時）</h3>
+            <p class="process-item__text">ご希望の方に、厳選した職場をご提案します。</p>
+          </div>
+        </li>
+        <li class="process-item fade-in">
+          <span class="process-item__num">05</span>
+          <div class="process-item__body">
+            <h3 class="process-item__title">入職後もサポート</h3>
+            <p class="process-item__text">長期的にご連絡できる関係を続けます。</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
+  <section class="section" id="faq">
     <div class="container">
-      <h2 class="section-title">よくある質問</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-q">今すぐ転職を考えているわけではないのですが、相談できますか？</button>
-          <div class="faq-a">
-            <p>もちろんです。「なんとなくもやもやしている」「このまま続けていいか不安」という段階からご相談いただけます。むしろ、そういった方のためのサービスです。</p>
-          </div>
+      <p class="section__label">faq</p>
+      <h2 class="section__title fade-in">よくある質問</h2>
+      <dl class="faq-list">
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">今すぐ転職を考えているわけではないのですが、相談できますか？</dt>
+          <dd class="faq-item__a">もちろんです。「なんとなくもやもやしている」「このまま続けていいか不安」という段階からご相談いただけます。むしろ、そういった方のためのサービスです。</dd>
         </div>
-        <div class="faq-item">
-          <button class="faq-q">費用はかかりますか？</button>
-          <div class="faq-a">
-            <p>看護師の方への費用は一切かかりません。</p>
-          </div>
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">費用はかかりますか？</dt>
+          <dd class="faq-item__a">看護師の方への費用は一切かかりません。</dd>
         </div>
-        <div class="faq-item">
-          <button class="faq-q">紹介してくれた方に、相談内容が伝わりますか？</button>
-          <div class="faq-a">
-            <p>ご相談の内容は秘密厳守です。紹介元の方に内容をお伝えすることはありません。</p>
-          </div>
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">紹介してくれた方に、相談内容が伝わりますか？</dt>
+          <dd class="faq-item__a">ご相談の内容は秘密厳守です。紹介元の方に内容をお伝えすることはありません。</dd>
         </div>
-        <div class="faq-item">
-          <button class="faq-q">訪問看護以外も相談できますか？</button>
-          <div class="faq-a">
-            <p>はい。美容クリニックや病院・クリニックへの転職、また転職しない選択肢を含めた相談も承っています。</p>
-          </div>
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">訪問看護以外も相談できますか？</dt>
+          <dd class="faq-item__a">はい。美容クリニックや病院・クリニックへの転職、また転職しない選択肢を含めた相談も承っています。</dd>
         </div>
-        <div class="faq-item">
-          <button class="faq-q">どこかに登録が必要ですか？</button>
-          <div class="faq-a">
-            <p>正式な登録は不要です。まずは話すだけでも構いません。</p>
-          </div>
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">どこかに登録が必要ですか？</dt>
+          <dd class="faq-item__a">正式な登録は不要です。まずは話すだけでも構いません。</dd>
         </div>
-        <div class="faq-item">
-          <button class="faq-q">面談はどのように行いますか？</button>
-          <div class="faq-a">
-            <p>基本的にはオンライン（Zoom等）で行います。ご希望に応じて柔軟に対応します。</p>
-          </div>
+        <div class="faq-item fade-in">
+          <dt class="faq-item__q">面談はどのように行いますか？</dt>
+          <dd class="faq-item__a">基本的にはオンライン（Zoom等）で行います。ご希望に応じて柔軟に対応します。</dd>
         </div>
-      </div>
+      </dl>
     </div>
   </section>
 
   <!-- Company -->
-  <section class="company">
+  <section class="section section--alt" id="company">
     <div class="container">
-      <h2 class="section-title">会社情報</h2>
-      <table class="company-table">
+      <p class="section__label">company</p>
+      <h2 class="section__title fade-in">会社情報</h2>
+      <table class="company-table fade-in">
         <tr>
           <th>会社名</th>
           <td>株式会社医伝士（Idenshi Inc.）</td>
@@ -261,12 +266,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-logo">つなぐナース</p>
-      <p class="footer-contact">ご連絡は、紹介元の方を通じてお願いします</p>
-      <p class="footer-copy">© 2025 株式会社医伝士 All Rights Reserved.</p>
-      <div class="footer-links">
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <p class="footer__logo">tsunagu nurse</p>
+      <p class="footer__contact">ご連絡は、紹介元の方を通じてお願いします</p>
+      <p class="footer__copy">© 2025 株式会社医伝士</p>
+      <div class="footer__links">
         <a href="#">プライバシーポリシー</a>
         <a href="#">特定商取引法に基づく表記</a>
       </div>
